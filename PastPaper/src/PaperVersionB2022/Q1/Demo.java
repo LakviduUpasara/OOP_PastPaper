@@ -20,7 +20,7 @@ public class Demo {
         garfield.GetTotalpoints();
 
         pet parrot1 = new Parrot("walk");
-        parrot1.feed();
+        parrot1.feed();  
         parrot1.GetTotalpoints();
     }
 }
