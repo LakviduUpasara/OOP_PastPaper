@@ -20,19 +20,19 @@ public class main {
 			if (input >= 0 )
 			{
 				Oddnumber.add(input) ;
-			}/////////////
+			}
 			else 
 			{
 				System.out.println("Input Is a Negative Value ");
 			}
-			//////////////////////
+			
 		}while (input != 0 );
 		
 		Oddnumber.removeIf(n ->  n % 2 == 0 );
 		
 		System.out.println("This is Odd Numbers ");
 		System.out.println(Oddnumber); 
-			/////////////////////////
+			
 	}
 
 }
