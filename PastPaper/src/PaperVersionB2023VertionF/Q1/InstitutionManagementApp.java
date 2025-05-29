@@ -71,6 +71,8 @@ public class InstitutionManagementApp {
 		c1.DisplayCourseDetails();
 		System.out.println("");
 		c2.DisplayCourseDetails();
+		
+		
 	}
 
 }

@@ -13,7 +13,11 @@ public class Cat extends pet {
 		
 		points = points + 10 ;
 		System.out.println(" cat is fed 10 points ");
+		
+		
 	}
+	
+	
 
 	@Override
 	public void cuddle() {
