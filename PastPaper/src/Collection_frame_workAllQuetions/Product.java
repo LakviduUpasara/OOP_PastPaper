@@ -17,12 +17,7 @@ public class Product {
 	}
 	
 	
-	public Product() {
-		
-		Name = null;
-		Quentity = 0;
-		price = 0.0;
-	}
+
 
 	public String getName() {
 		return Name;
@@ -56,7 +51,7 @@ public class Product {
 	public String toString ()
 	{
 		
-		return "Name " + name  + ", Quntity " + Quentity + ",price  : Rs " + price   ;
+		return "Name " + Name  + ", Quntity " + Quentity + ",price  : Rs " + price   ;
 		
 	}
 	

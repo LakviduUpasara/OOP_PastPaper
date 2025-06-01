@@ -7,7 +7,7 @@ public class InventoryManager {
 	
 	private HashMap<String, Product> inventory = new HashMap<>();
 	
-	public void AddProduct(String code ,String Name ,int Quntity ,double price ) {
+	public void addOrUpdateProduct(String code ,String Name ,int Quntity ,double price ) {
 		
 		if (inventory.containsKey(code ))
 		{
@@ -17,15 +17,17 @@ public class InventoryManager {
 			extisting.setPrice(price);
 			
 			
-			
+			 System.out.println("Upadete Product " + code);
+
 			
 		}
 		else 
 		{
 			Product newProduct = new Product(Name ,Quntity ,price);
-			inventory.put(Name, newProduct) ;
-			System.out.println("prodect : " + code );
+			inventory.put(code, newProduct) ;
+			System.out.println("Product : " + code );
 		
+			System.out.println("Add Product " + code);
 		}
 		
 		
@@ -35,11 +37,11 @@ public class InventoryManager {
 	
 	public void removeProduct(String code ) {
 		
-		if (inventory.containsKey(code ))
+		if(inventory.containsKey(code))
 		{
-			Product extisting = inventory.get(code) ;
 			
-			inventory.remove(code) ;
+            inventory.remove(code);
+            System.out.println("Product removed: " + code);
 			
 			System.out.println(code  +"Reemoved Succusfully");
 		}
@@ -62,10 +64,12 @@ public class InventoryManager {
 		{
 			for (Map.Entry<String, Product>  entry : inventory.entrySet())
 			{
-				System.out.println("code " + entry.getKey() + "-" + entry.getValue());
-			}
+				System.out.println("code " + entry.getKey() + "-" + entry.getValue() );
 		}
 		
 		
+	}
+
+	
 	}
 }
