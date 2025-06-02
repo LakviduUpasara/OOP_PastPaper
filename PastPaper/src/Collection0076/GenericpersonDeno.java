@@ -29,6 +29,7 @@ public class GenericpersonDeno {
 		 
 		 GenaricPerson newperson = new GenaricPerson() ;
 		 
+		 
 		 //
 		 
 		 System.out.println("_______________Lecter  Details________________ ");
